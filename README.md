@@ -1,5 +1,7 @@
-# npm-webpack-bolierplate
-:page_with_curl: Boilerplate for npm/node module. Write with webpack & ES6
+# instaparser.js
+Unofficial instagram parser.
+
+Initial environment is made by [npm-webpack-boilerplate](https://github.com/JeffGuKang/npm-webpack-boilerplate).
 
 ## Commands
 * `npm install` : Dependency module install
@@ -12,5 +14,5 @@
 ```
 MIT License
 
-Copyright (c) 2016 KossHackaton OneTeam
+Copyright (c) 2016 instaparser Team.
 ```
