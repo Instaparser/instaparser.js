@@ -10,6 +10,9 @@ Initial environment is made by [npm-webpack-boilerplate](https://github.com/Jeff
 * `npm run dev` : Run develop server
  * You can see result in (Mac : http://0.0.0.0:8080, Windows : http://localhost:8080)
 
+## Contributing
+`test/data.json` 
+
 ## License
 ```
 MIT License
