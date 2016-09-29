@@ -7,7 +7,7 @@ import path from 'path';
 // GetInstaData.getTopPosts('트와이스')
 //  .then((res) => {
 //
-//     let file = path.join(__dirname, './', "toppost.json");
+//     let file = path.join(__dirname, '../example/', "toppost.json");
 //     let json = JSON.stringify(res);
 //
 //     fs.writeFile(file,json,function(res){
@@ -18,7 +18,7 @@ import path from 'path';
 //
 // GetInstaData.getRecentPosts('트와이스')
 //   .then((res) => {
-//     let file = path.join(__dirname, './', "mostpost.json");
+//     let file = path.join(__dirname, '../example/', "mostpost.json");
 //     let json = JSON.stringify(res);
 //
 //     fs.writeFile(file,json,function(res){
