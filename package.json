@@ -36,7 +36,6 @@
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-webpack": "^1.8.0",
-    "request": "^2.75.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1"
   },
@@ -48,5 +47,8 @@
     "instagram",
     "javascript",
     "parser"
-  ]
+  ],
+  "dependencies": {
+    "request": "^2.75.0"
+  }
 }
