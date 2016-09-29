@@ -6,6 +6,7 @@
     "node": ">=0.4.5"
   },
   "scripts": {
+    "fastbuild": "webpack --config ./webpack.prod.config.js",
     "build": "babel-node ./scripts/emptyFolder && webpack --config ./webpack.prod.config.js",
     "dev": "webpack-dev-server --content-base src/index --hot --host 0.0.0.0 --config ./webpack.config.js",
     "watch": "webpack --progress --colors --watch --config ./webpack.config.js",
@@ -49,6 +50,7 @@
     "parser"
   ],
   "dependencies": {
-    "request": "^2.75.0"
+    "axios": "^0.14.0",
+    "es6-promise": "^4.0.3"
   }
 }
