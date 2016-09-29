@@ -14,4 +14,4 @@ import GetInstaData from './getInstaData';
 //     console.log('All tasks are done!');
 //   });
 
-export default GetInstarData;
+export default GetInstaData;
