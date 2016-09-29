@@ -2,7 +2,7 @@ import GetInstaData from '../src/getInstaData';
 import fs from 'fs';
 import path from 'path';
 
-/* this is a test code */
+/* this is a example code */
 
 GetInstaData.getTopPosts('트와이스')
  .then((res) => {
