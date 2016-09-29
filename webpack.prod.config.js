@@ -8,7 +8,7 @@ const optimizingPlugins = [
     'process.env.NODE_ENV': JSON.stringify('production'),
   }),
   new webpack.optimize.OccurrenceOrderPlugin,
-  new webpack.optimize.UglifyJsPlugin,
+  // new webpack.optimize.UglifyJsPlugin,
   new HtmlWebpackPlugin({
     template: './views/index.ejs',
     inject: false,

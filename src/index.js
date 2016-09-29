@@ -1,17 +1,17 @@
-import GetInstaData, { getParsedData } from './getParsedData';
+import GetInstaData from './getInstaData';
 
-getParsedData()
-  .then((parsedData) => {
-    console.log(`getting insta data is succeeded! ${parsedData}`);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+/* this is a test code */
 
-GetInstaData.getTopPosts('트와이스')
-.then((parsedData) => {
-  console.log(`getting insta data is succeeded! ${parsedData}`);
-})
-.catch((err) => {
-  console.error(err);
-});
+// GetInstaData.getTopPosts('트와이스')
+//   .then((res) => {
+//     console.log(res);
+//     console.log('All tasks are done!');
+//   });
+
+// GetInstaData.getRecentPosts('트와이스')
+//   .then((res) => {
+//     console.log(res);
+//     console.log('All tasks are done!');
+//   });
+
+export default GetInstarData;

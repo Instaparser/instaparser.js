@@ -15,6 +15,7 @@ module.exports = {
     path: path.resolve('./dist'),
     filename: 'bundle.js',
   },
+  target: 'node',
   resolve: {
     modulesDirectories: ['node_modules'],
     extensions: ['', '.js'],
@@ -32,6 +33,10 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'raw',
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
       },
     ],
   },
