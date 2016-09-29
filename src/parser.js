@@ -2,12 +2,12 @@ import axios from 'axios';
 
 function getData() {
   axios.get('https://www.instagram.com/explore/tags/twice')
-    .then(function (response) {
+    .then((response) => {
       console.log(response);
     })
-    .catch(function (error) {
+    .catch((error) => {
       console.log(error);
     });
 }
 
-export default getData
+export default getData;
