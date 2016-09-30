@@ -25,22 +25,22 @@
   </style>
 </head>
 <body>
-  <h1>인기 게시물 - 트와이스</h1>
+  <h1>인기 게시물 - <%= tag %></h1>
 
   <div class="carousel">
     <% for(var i=0; i<topPost.length; i++) {%>
       <div>
-        <img src='<%= topPost[i].thumbnail_src %>' />
+        <img src='<%= topPost[i].display_src %>' />
       </div>
     <% } %>
   </div>
 
-  <h1>최근 사진 - 트와이스</h1>
+  <h1>최근 사진 - <%= tag %></h1>
 
   <div class="carousel">
     <% for(var i=0; i<recentPost.length; i++) {%>
       <div>
-        <img src='<%= recentPost[i].thumbnail_src %>' />
+        <img src='<%= recentPost[i].display_src %>' />
       </div>
     <% } %>
   </div>
