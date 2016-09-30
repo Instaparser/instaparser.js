@@ -76,10 +76,10 @@ You can find example implementations in the [`example/`](example/) directory.
 
 Example server excute
 *  Mac : `TAG="keyword" npm run example`
-*  Windows 
+*  Windows
 	- The first method `set TAG="keyord"` and `npm run example`
 	- The second method `example/example.cmd`
- 
+
 You can see result in
 *  Mac : http://0.0.0.0:8081
 *  Windows : http://localhost:8081
@@ -100,6 +100,10 @@ You can see result in
 * OS X : http://0.0.0.0:8080
 
 * Windows : http://localhost:8080
+
+### Example page
+![example](./images/example.PNG)
+
 
 
 ## License
