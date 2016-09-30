@@ -2,64 +2,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Insta Parser Example</title>
   <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
-  <style type="text/css">
-    body{
-      background-color: #AAF0D1;
-    }
-    .carousel img{
-      margin-left: 10px;
-      margin-right: 10px;
-      height: 300px;
-    }
-    h1{
-      margin-top: 50px;
-    }
-    .carousel{
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="/css/example.css"/>
+
 </head>
 <body>
-  <h1>인기 게시물 - <%= tag %></h1>
 
-  <div class="carousel">
-    <% for(var i=0; i<topPost.length; i++) {%>
-      <div>
-        <img src='<%= topPost[i].display_src %>' />
-      </div>
-    <% } %>
-  </div>
 
-  <h1>최근 사진 - <%= tag %></h1>
+  <header class="header">
+    <span class="header-title">
+      <h1>Instagram Parser Example</h1>
+    </span>
+  </header>
+  <section>
+    <h1 class="title">Most Photo - <%= tag %></h1>
 
-  <div class="carousel">
-    <% for(var i=0; i<recentPost.length; i++) {%>
-      <div>
-        <img src='<%= recentPost[i].display_src %>' />
-      </div>
-    <% } %>
-  </div>
+    <div class="carousel">
+      <% for(var i=0; i<topPost.length; i++) {%>
+        <div class="imgWrap">
+          <img src="<%= topPost[i].thumbnail_src %>" alt="polaroid" />
+          <p class="imgDescription"><%= topPost[i].caption %></p>
+        </div>
+      <% } %>
+    </div>
+
+    <h1 class="title">Recent Photo - <%= tag %></h1>
+
+    <div class="carousel">
+      <% for(var i=0; i<recentPost.length; i++) {%>
+        <div class="imgWrap">
+          <img src="<%= recentPost[i].thumbnail_src %>" alt="recentPost[i].date" />
+          <p class="imgDescription"><%= recentPost[i].caption %></p>
+        </div>
+      <% } %>
+    </div>
+  </section>
+  <footer class="footer">
+    <span class="footer-context">
+      <h4>Copyright © 2016 instaparser Team.</h4>
+    </span>
+  </footer>
+
 
   <script type="text/javascript" src="/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="/slick/slick.min.js"></script>
+  <script type="text/javascript" src="/js/example.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: true,
-        variableWidth: true,
-        adaptiveHeight: true
-      });
-    });
-  </script>
 </body>
 </html>
