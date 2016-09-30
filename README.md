@@ -22,7 +22,7 @@ Run test with [jasmine](http://jasmine.github.io/2.5/introduction.html) + [jasmi
 You can find example implementations in the [`examples/`](examples/) directory.
 
 Example server excute
-*  Mac : `TAG=%tag% npm run example`
+*  Mac : `TAG="keyword" npm run example`
 *  Windows : `npm run example`
  
 You can see result in
