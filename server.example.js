@@ -17,6 +17,7 @@ app.use('/js', express.static(__dirname + '/example/js/'));
 app.use('/css', express.static(__dirname + '/example/css/'));
 
 
+
 app.get('/', function(req, res) {
   var tag = config.tag;
   var topPost;
