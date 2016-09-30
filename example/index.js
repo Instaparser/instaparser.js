@@ -3,11 +3,7 @@ import path from 'path';
 import GetInstaData from '../src/getInstaData';
 
 /* this is a example code */
-const tag = process.env.TAG;
-
-if (!tag) {
-  throw new Error('There is no TAG to find!');
-}
+const tag = process.env.TAG || 'hayeonsoo';
 
 GetInstaData.getTopPosts(tag)
   .then((res) => {

@@ -18,7 +18,7 @@ app.use('/css', express.static(__dirname + '/example/css/'));
 
 
 app.get('/', function(req, res) {
-  const tag = process.env.TAG;
+  const tag = process.env.TAG || 'hayeonsoo';
   var topPost;
   var recentPost;
   fs.readFile('./example/toppost.json', 'utf8', function (err, data) {
