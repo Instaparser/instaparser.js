@@ -2,12 +2,8 @@ body{
   background-color: #AAF0D1;
   margin: 0;
 }
-h1{
-  margin-left: 15px;
-}
-
 /* header */
-.header-title{
+h1 {
   margin: 10px;
   color: #68EAAD;
 }
@@ -15,6 +11,12 @@ h1{
   background-color: #ffffff;
   width: 100%;
   height: 80px;
+}
+
+h2{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 36px;
+  margin: 15px;
 }
 
 /* section */
@@ -29,8 +31,15 @@ h1{
   margin-right: 50px;
 }
 .carousel img{
-  height: 270px;
-  border: 8px solid #FFF;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 250px;
+  border: 3px solid #244b81;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  cursor: pointer;
 }
 .carousel .slick-slide{
   padding: 20px;
@@ -40,6 +49,7 @@ h1{
 }
 .slick-prev:before, .slick-next:before {
   font-size: 30px;
+  color: #244b81;
 }
 
 .imgWrap {
