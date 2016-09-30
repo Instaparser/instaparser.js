@@ -13,7 +13,7 @@
     "watch": "webpack --progress --colors --watch --config ./webpack.config.js",
     "test": "mocha ./src/test/*.spec.js --compilers js:babel-core/register",
     "test-watch": "mocha ./src/test/*.spec.js --compilers js:babel-core/register --watch",
-    "example": "TAG=$TAG babel-node ./example/index.js && TAG=$TAG node server.example.js"
+    "example": "babel-node ./example/index.js TAG=$TAG && node server.example.js TAG=$TAG"
   },
   "contributors": {
     "author": "choseungyoon"
