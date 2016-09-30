@@ -12,7 +12,7 @@ npm install instaparser
 ```
 
 ## Basic Usage
-**getTopPosts(tag<String>)**
+*getTopPosts(tag:<String>)*
 
 Find top 9 Instagram posts data from the tag.
 This method return Promise
@@ -31,7 +31,7 @@ Instaparser.getTopPosts('catsagram')
   });
 ```
 
-**getRecentPosts(tag<String>)**
+*getRecentPosts(tag:<String>)*
 
 Find recent 9 Instagram posts data from the tag.
 This method return Promise
@@ -72,12 +72,14 @@ Do some magic with ES6 to create ES5 code.
 Run test with [jasmine](http://jasmine.github.io/2.5/introduction.html) + [jasmine-node](https://github.com/mhevery/jasmine-node)
 
 ### Example
-You can find example implementations in the [`examples/`](examples/) directory.
+You can find example implementations in the [`example/`](example/) directory.
 
 Example server excute
 *  Mac : `TAG="keyword" npm run example`
-*  Windows : `npm run example`
-
+*  Windows 
+	- The first method `set TAG="keyord"` and `npm run example`
+	- The second method `example/example.cmd`
+ 
 You can see result in
 *  Mac : http://0.0.0.0:8081
 *  Windows : http://localhost:8081
@@ -98,9 +100,6 @@ You can see result in
 * OS X : http://0.0.0.0:8080
 
 * Windows : http://localhost:8080
-
-### Example page
-![](./images/example.PNG)
 
 
 ## License
