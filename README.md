@@ -19,10 +19,12 @@ Do some magic with ES6 to create ES5 code.
 Run test with [jasmine](http://jasmine.github.io/2.5/introduction.html) + [jasmine-node](https://github.com/mhevery/jasmine-node)
 
 ### Example
-`npm run example`
+You can find example implementations in the [`examples/`](examples/) directory.
 
 Example server excute
-
+*  Mac : `TAG="keyword" npm run example`
+*  Windows : `npm run example`
+ 
 You can see result in
 *  Mac : http://0.0.0.0:8081
 *  Windows : http://localhost:8081
