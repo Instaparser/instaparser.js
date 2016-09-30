@@ -65,6 +65,9 @@ You can see result in
 
 * Windows : http://localhost:8080
 
+### Example page
+![](./images/example.PNG)
+
 
 ## License
 ```
