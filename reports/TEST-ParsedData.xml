@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="ParsedData" errors="0" tests="1" failures="0" time="1.958" timestamp="2016-09-30T10:30:40">
+  <testcase classname="ParsedData" name="if i search a tag, i&amp;apos;ll have to get correct instagram data" time="1.956"></testcase>
+</testsuite>
+</testsuites>
