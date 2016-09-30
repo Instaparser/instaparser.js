@@ -4,7 +4,7 @@
 Initial environment is made by [npm-webpack-boilerplate](https://github.com/JeffGuKang/npm-webpack-boilerplate).
 
 ## instaparser.js Architecture
-![instaparser.js Architecture](/images/architecture.png)
+![instaparser.js Architecture](/images/architecture.PNG)
 
 ## Commands
 ### Install
