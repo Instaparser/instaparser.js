@@ -1,11 +1,15 @@
 import fs from 'fs';
 import path from 'path';
 import GetInstaData from '../src/getInstaData';
-import config from '../config.json';
 
 /* this is a example code */
+const tag = process.env.TAG;
 
-GetInstaData.getTopPosts(config.tag)
+if (!tag) {
+  throw new Error('There is no TAG to find!');
+}
+
+GetInstaData.getTopPosts(tag)
   .then((res) => {
     const file = path.join(__dirname, './', 'toppost.json');
     const json = JSON.stringify(res);
@@ -16,7 +20,7 @@ GetInstaData.getTopPosts(config.tag)
     });
   });
 
-GetInstaData.getRecentPosts(config.tag)
+GetInstaData.getRecentPosts(tag)
   .then((res) => {
     const file = path.join(__dirname, './', 'mostpost.json');
     const json = JSON.stringify(res);
