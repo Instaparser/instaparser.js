@@ -12,7 +12,7 @@ npm install instaparser
 ```
 
 ## Basic Usage
-*getTopPosts(tag:<String>)*
+**getTopPosts(tag<String>)**
 
 Find top 9 Instagram posts data from the tag.
 This method return Promise
@@ -31,7 +31,7 @@ Instaparser.getTopPosts('catsagram')
   });
 ```
 
-*getRecentPosts(tag:<String>)*
+**getRecentPosts(tag<String>)**
 
 Find recent 9 Instagram posts data from the tag.
 This method return Promise
