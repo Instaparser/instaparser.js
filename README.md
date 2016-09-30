@@ -1,21 +1,37 @@
 # instaparser.js
-:camera: Unofficial instagram parser.
+:camera: Unofficial instagram parser to get Instagram photos data by tag search in node-side.
 
 Initial environment is made by [npm-webpack-boilerplate](https://github.com/JeffGuKang/npm-webpack-boilerplate).
 
-## instaparser.js Architecture
+## Installation
+
+instaparser is available on NPM:
+
+```
+npm install instaparser
+```
+
+## Basic Usage
+```
+// CommonJS
+var instaparser = require("instaparser");
+```
+
+## Development
+
+### instaparser.js Architecture
 ![instaparser.js Architecture](/images/architecture.PNG)
 
-## Commands
 ### Install
 `npm install`
 
-Dependency module install
+Dependency module install.
 
 ### Build
 `npm run build`
 
 Do some magic with ES6 to create ES5 code.
+
 ### Test
 `npm run test`
 
@@ -27,15 +43,17 @@ You can find example implementations in the [`examples/`](examples/) directory.
 Example server excute
 *  Mac : `TAG="keyword" npm run example`
 *  Windows : `npm run example`
- 
+
 You can see result in
 *  Mac : http://0.0.0.0:8081
 *  Windows : http://localhost:8081
 
 ### Make `.json` file
+
+Make json file using instaparser.
+
 `npm run jsonfile`
 
-Make json file using Insta Parser
 
 ### Develop
 `npm run dev`
@@ -47,8 +65,6 @@ You can see result in
 
 * Windows : http://localhost:8080
 
-## Contributing
-`test/data.json`
 
 ## License
 ```
