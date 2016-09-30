@@ -1,0 +1,23 @@
+body{
+  background-color: #AAF0D1;
+}
+h1{
+  margin-top: 50px;
+}
+.carousel{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.carousel img{
+  height: 300px;
+  border: 8px solid #FFF;
+}
+.carousel .slick-slide{
+  padding: 10px;
+}
+.slick-prev {
+  left: -35px;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+}
