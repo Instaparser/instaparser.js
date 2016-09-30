@@ -1,0 +1,60 @@
+<!-- insta parser 예제입니다. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insta Parser Example</title>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <style type="text/css">
+    .carousel img{
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 300px;
+    }
+
+    h1{
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>인기 게시물 - 트와이스</h1>
+
+  <div class="carousel">
+    <% for(var i=0; i<topPost.length; i++) {%>
+      <div>
+        <img src='<%= topPost[i].thumbnail_src %>' />
+      </div>
+    <% } %>
+  </div>
+
+  <h1>최근 사진 - 트와이스</h1>
+
+  <div class="carousel">
+    <% for(var i=0; i<recentPost.length; i++) {%>
+      <div>
+        <img src='<%= recentPost[i].thumbnail_src %>' />
+      </div>
+    <% } %>
+  </div>
+
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        adaptiveHeight: true
+      });
+    });
+  </script>
+</body>
+</html>

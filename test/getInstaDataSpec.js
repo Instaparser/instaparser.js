@@ -1,11 +1,15 @@
 /*
   Parser Test case
-*/
 
-// import ParsedData from './../src/getInstaData.js';
+  jasmine으로 Test작성시에 es6문법을 사용하려면 더 설정이 필요해서 es6문법을 사용하지 않음.
+  최신 포스트와 Top 포스트 2가지를 테스트함.
+  describe 2가지로 나눈 이유는 async로 요청을 해야하기 때문.
+*/
 var ParsedData = require('../dist/getInstaData').default;
 
-
+/*
+  Top 포스트 가져오기
+ */
 describe('Toppost ParsedData', function(){
 
   var resultData = null;
@@ -30,6 +34,9 @@ describe('Toppost ParsedData', function(){
 
 });
 
+/*
+  최신 포스트 가져오기
+ */
 describe('RecentPost ParsedData', function(){
 
   var resultData = null;
