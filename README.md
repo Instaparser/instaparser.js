@@ -12,10 +12,44 @@ npm install instaparser
 ```
 
 ## Basic Usage
+*getTopPosts(tag:<String>)*
+
+Find top 9 Instagram posts data from the tag.
+This method return Promise
+
+Example
 ```
 // CommonJS
-var instaparser = require("instaparser");
+var Instaparser = require("instaparser");
+
+Instaparser.getTopPosts('catsagram')
+  .then(function(res) {
+    console.log(res);
+  })
+  .catch(function(err) {
+    throw new Error(err);
+  });
 ```
+
+*getRecentPosts(tag:<String>)*
+
+Find recent 9 Instagram posts data from the tag.
+This method return Promise
+
+Example
+```
+// CommonJS
+var Instaparser = require("instaparser");
+
+Instaparser.getRecentPosts('catsagram')
+  .then(function(res) {
+    console.log(res);
+  })
+  .catch(function(err) {
+    throw new Error(err);
+  });
+```
+
 
 ## Development
 
