@@ -3,7 +3,6 @@
 
 Initial environment is made by [npm-webpack-boilerplate](https://github.com/JeffGuKang/npm-webpack-boilerplate).
 
-
 ## Installation
 
 instaparser is available on NPM:
@@ -18,7 +17,10 @@ npm install instaparser
 var instaparser = require("instaparser");
 ```
 
-## Development Commands
+## Development
+
+### instaparser.js Architecture
+![instaparser.js Architecture](/images/architecture.PNG)
 
 ### Install
 `npm install`
