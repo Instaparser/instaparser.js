@@ -5,3 +5,5 @@ dist
 build
 .idea
 reports
+example/mostpost.json
+example/toppost.json
