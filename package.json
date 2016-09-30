@@ -11,7 +11,7 @@
     "dev": "webpack-dev-server --content-base src/index --hot --host 0.0.0.0 --config ./webpack.config.js",
     "jsonfile": "babel-node ./example/index.js",
     "watch": "webpack --progress --colors --watch --config ./webpack.config.js",
-    "test": "babel src --out-dir dist && jasmine-node --verbose test/getInstaDataSpec.js --captureExceptions --junitreport --output reports",
+    "test": "babel src --out-dir dist && jasmine-node --verbose test/ --captureExceptions --junitreport --output reports",
     "example": "babel-node ./example/index.js && node server.example.js"
   },
   "contributors": {
