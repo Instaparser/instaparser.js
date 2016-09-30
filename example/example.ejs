@@ -11,25 +11,42 @@
 
 </head>
 <body>
-  <h1>인기 게시물 - <%= tag %></h1>
 
-  <div class="carousel">
-    <% for(var i=0; i<topPost.length; i++) {%>
-      <div>
-        <img src='<%= topPost[i].display_src %>' />
-      </div>
-    <% } %>
-  </div>
 
-  <h1>최근 사진 - <%= tag %></h1>
+  <header class="header">
+    <span class="header-title">
+      <h1>Instagram Parser Example</h1>
+    </span>
+  </header>
+  <section>
+    <h1 class="title">인기 게시물 - <%= tag %></h1>
 
-  <div class="carousel">
-    <% for(var i=0; i<recentPost.length; i++) {%>
-      <div>
-        <img src='<%= recentPost[i].display_src %>' />
-      </div>
-    <% } %>
-  </div>
+    <div class="carousel">
+      <% for(var i=0; i<topPost.length; i++) {%>
+        <div class="imgWrap">
+          <img src="<%= topPost[i].thumbnail_src %>" alt="polaroid" />
+          <p class="imgDescription"><%= topPost[i].caption %></p>
+        </div>
+      <% } %>
+    </div>
+
+    <h1 class="title">최근 사진 - <%= tag %></h1>
+
+    <div class="carousel">
+      <% for(var i=0; i<recentPost.length; i++) {%>
+        <div class="imgWrap">
+          <img src="<%= recentPost[i].thumbnail_src %>" alt="recentPost[i].date" />
+          <p class="imgDescription"><%= recentPost[i].caption %></p>
+        </div>
+      <% } %>
+    </div>
+  </section>
+  <footer class="footer">
+    <span class="footer-context">
+      <h4>Copyright © 2016 instaparser Team.</h4>
+    </span>
+  </footer>
+
 
   <script type="text/javascript" src="/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="/slick/slick.min.js"></script>
