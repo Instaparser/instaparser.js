@@ -30,6 +30,7 @@
     "fs-extra": "^0.30.0",
     "html-webpack-plugin": "^2.22.0",
     "jasmine-core": "^2.5.2",
+    "jasmine-node": "^1.14.5",
     "json-loader": "^0.5.4",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1"
