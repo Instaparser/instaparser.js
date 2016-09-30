@@ -11,6 +11,9 @@ var fs = require('fs');
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/example');
 
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/slick', express.static(__dirname + '/node_modules/slick-carousel/slick/'));
+
 
 app.get('/', function(req, res) {
 
