@@ -12,7 +12,7 @@
     "jsonfile": "babel-node ./example/index.js",
     "watch": "webpack --progress --colors --watch --config ./webpack.config.js",
     "test": "babel src --out-dir dist && jasmine-node --verbose test/ --captureExceptions --junitreport --output reports",
-    "example": "TAG=$TAG babel-node ./example/index.js && node server.example.js"
+    "example": "babel-node ./example/index.js && node server.example.js TAG=$TAG"
   },
   "contributors": {
     "author": "choseungyoon"
