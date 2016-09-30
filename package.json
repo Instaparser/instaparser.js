@@ -9,8 +9,10 @@
     "fastbuild": "webpack --config ./webpack.prod.config.js",
     "build": "babel-node ./scripts/emptyFolder && webpack --config ./webpack.prod.config.js",
     "dev": "webpack-dev-server --content-base src/index --hot --host 0.0.0.0 --config ./webpack.config.js",
+    "jsonfile": "babel-node ./example/index.js",
     "watch": "webpack --progress --colors --watch --config ./webpack.config.js",
-    "test": "babel src --out-dir dist && jasmine-node --verbose test/getInstaDataSpec.js --captureExceptions --junitreport --output report"
+    "test": "babel src --out-dir dist && jasmine-node --verbose test/getInstaDataSpec.js --captureExceptions --junitreport --output reports",
+    "example": "babel-node ./example/index.js && node server.example.js"
   },
   "contributors": {
     "author": "choseungyoon"
@@ -33,7 +35,11 @@
     "jasmine-node": "^1.14.5",
     "json-loader": "^0.5.4",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "webpack-dev-server": "^1.16.1",
+    "express": "4.14.0",
+    "ejs": "2.5.2",
+    "jquery": "3.1.1",
+    "slick-carousel": "1.6.0"
   },
   "main": "dist/bundle.js",
   "directories": {
