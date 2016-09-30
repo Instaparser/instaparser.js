@@ -6,7 +6,6 @@
 var express = require('express');
 var app = express();
 var fs = require('fs');
-var config = require('./config.json');
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/example');
@@ -19,7 +18,7 @@ app.use('/css', express.static(__dirname + '/example/css/'));
 
 
 app.get('/', function(req, res) {
-  var tag = config.tag;
+  const tag = process.env.TAG;
   var topPost;
   var recentPost;
   fs.readFile('./example/toppost.json', 'utf8', function (err, data) {
