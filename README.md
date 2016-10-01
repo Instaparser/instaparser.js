@@ -5,11 +5,10 @@ Initial environment is made by [npm-webpack-boilerplate](https://github.com/Jeff
 
 ## Installation
 
-instaparser is available on NPM:
+`npm install instaparser`
 
-```console
-npm install instaparser
-```
+instaparser is available on NPM
+
 
 ## Basic Usage
 ### `getTopPosts(tag<String>)`
