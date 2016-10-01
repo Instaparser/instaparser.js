@@ -7,18 +7,18 @@ Initial environment is made by [npm-webpack-boilerplate](https://github.com/Jeff
 
 instaparser is available on NPM:
 
-```
+```console
 npm install instaparser
 ```
 
 ## Basic Usage
-**getTopPosts(tag<String>)**
+### `getTopPosts(tag<String>)`
 
 Find top 9 Instagram posts data from the tag.
 This method return Promise
 
-Example
-```
+### Example
+```js
 // CommonJS
 var Instaparser = require("instaparser");
 
@@ -31,13 +31,15 @@ Instaparser.getTopPosts('catsagram')
   });
 ```
 
-**getRecentPosts(tag<String>)**
+---
+
+### `getRecentPosts(tag<String>)`
 
 Find recent 9 Instagram posts data from the tag.
 This method return Promise
 
-Example
-```
+### Example
+```js
 // CommonJS
 var Instaparser = require("instaparser");
 
