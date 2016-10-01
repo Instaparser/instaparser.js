@@ -1,14 +1,13 @@
 /*
   Parser Test case
 
-  jasmine으로 Test작성시에 es6문법을 사용하려면 더 설정이 필요해서 es6문법을 사용하지 않음.
-  최신 포스트와 Top 포스트 2가지를 테스트함.
-  describe 2가지로 나눈 이유는 async로 요청을 해야하기 때문.
+  To use the Test es6 grammar when writing a jasmine because it requires no additional configuration es6 grammar is not used.
+  Was tested under the latest posts and Post Top 2 things, why divided into two describe below is due to be requested in async.
 */
 var ParsedData = require('../dist/getInstaData').default;
 
 /*
-  Top 포스트 가져오기
+  Get Top Posts
  */
 describe('Toppost ParsedData', function(){
 
@@ -35,7 +34,7 @@ describe('Toppost ParsedData', function(){
 });
 
 /*
-  최신 포스트 가져오기
+  Get Recent Posts
  */
 describe('RecentPost ParsedData', function(){
 
